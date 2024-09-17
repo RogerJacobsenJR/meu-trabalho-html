@@ -1,0 +1,219 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos do Cabeçalho e Navegação */
+header {
+    background: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Estilos da Seção Principal */
+main {
+    padding: 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section img {
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem */
+}
+
+p, form label {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Mantém o alinhamento dos labels e inputs */
+}
+
+form label {
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 12px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Ajustes de Espaçamento */
+input, select, textarea {
+    margin-bottom: 20px;
+}
+
+/* Estilos de Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos do Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    table, form {
+        font-size: 16px;
+    }
+
+    input, select, textarea, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Estilos para melhor usabilidade e feedback visual */
+input:invalid {
+    border-color: #dc3545;
+}
+
+input:invalid:focus {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+}
